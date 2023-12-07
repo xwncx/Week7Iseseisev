@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+    
+}
+
+.header h1 {
+    text-transform: uppercase;
+}
+
+.image-container {   
+    clip-path: circle(50% at 50% 50%);
+    background-image: url('../Week7/img/12.jpg');
+    background-image: url('../Week7/img/11.jpg');
+    background-image: url('../Week7/img/13j.jpg');
+    background-image: url('../Week7/img/14.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 450px;
+    margin: 2rem auto;  
+}
+
+.navigation ul li {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 16rem;
+    margin: 3rem 0;
+}
+
+.navigation ul li:not(:last-child) {
+    margin-right: 6rem;
+}
+
+
+.main-container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.main-container div {
+    margin-bottom: 2rem;
+}
+
+.main-container h1 {
+    margin-bottom: 5rem;
+}
+
+.main-container p {
+    text-align: justify;
+}
+
+.footer {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 2rem;
+}
+
+.footer ul a {
+    color: #777;
+    text-decoration: none;
+}
+
+
+@media (min-width: 480px) {
+    .image-container {
+        background-image: url('../Week7/img/12.jpg');
+    }
+    .container {
+        background-color: rgb(241, 156, 9);
+        color: rgb(95, 43, 226);
+    }
+    .navigation ul li {
+        border-color: rgb(80, 255, 133);
+    }
+    
+
+    .container {
+        width: 100%;
+    }
+    
+
+    .navigation ul li {
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+    .navigation ul li:not(:last-child) {
+        border-bottom: none;
+    }
+    
+
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    .image-container {
+        background-image: url('../Week7/img/11.jpg');
+    }
+    .container {
+        background-color: cadetblue;
+        color: rgb(84, 27, 27);
+    }
+    .navigation ul li {
+        border-color: rgb(63, 35, 35);
+    }
+   
+}
+
+
+@media (min-width: 1024px){
+    .image-container {
+        background-image: url('../Week7/img/13j.jpg');
+    }
+    .container {
+        background-color: rgb(110, 29, 68);
+        color: rgb(118, 209, 27);
+    }
+    .navigation ul li {
+        border-color: rgb(125, 129, 49);
+    }
+   
+}
+
+
+@media (min-width: 1200px){
+    .image-container {
+        background-image: url('../Week7/img/14.jpg');
+    }
+    .container {
+        background-color: rgb(88, 208, 28);
+        color: black;
+    }
+    .navigation ul li {
+        border-color: rgb(64, 19, 187);
+    }
+    
+    .header h1 {
+        margin: 3rem auto;
+    }
+    .navigation ul li {
+        display: inline-block;
+        width: 16rem;
+    }
+    
+    .navigation ul li:not(:last-child) {
+        border-bottom: 1px solid black;
+        margin-right: 4rem;
+    }
+
+    .main-container {
+        width: 75%;
+    }
+
+}
